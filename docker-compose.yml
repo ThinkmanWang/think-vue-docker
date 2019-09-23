@@ -6,7 +6,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - '8080:80'
-    volumes:
-      # - ./dist:/etc/nginx/html
-      - ./config/nginx:/etc/nginx/conf.d
+    # volumes:
+    #   - .:/app
+    #   - ./dist:/etc/nginx/html
+    #   - ./config/nginx:/etc/nginx/conf.d
+    restart: always
 

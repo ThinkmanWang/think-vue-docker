@@ -4,15 +4,23 @@
 
     <input v-model="message" placeholder="edit me">
     <p>Message is: {{ message }}</p>
+
+    <mt-button type="default" @click="showToast()">default</mt-button>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'FXXK',
   props: {
     msg: String
     , message: String
+  }
+  , methods: {
+    showToast: function() {
+      window.console.log("FXXK");
+    }
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div id="app-main">
+    <div class="page-tabbar">
         <mt-header id="app-header" v-bind:title="selected" fixed="true">
             <router-link to="/" slot="left">
                 <mt-button icon="back"></mt-button>
@@ -8,19 +8,31 @@
             <mt-button icon="more" slot="right"></mt-button>
         </mt-header>
 
-        <mt-tab-container id="app-content" class="page-tabbar-container" v-model="selected">
-            <mt-tab-container-item id="首页">
-                <HomePage></HomePage>
-            </mt-tab-container-item>
-            <mt-tab-container-item id="我的">
-                <MinePage></MinePage>
-            </mt-tab-container-item>
-        </mt-tab-container>
+        <div class="page-wrap">
+            <mt-tab-container id="app-content" class="page-tabbar-container" v-model="selected">
+                <mt-tab-container-item id="首页">
+                    <HomePage></HomePage>
+                </mt-tab-container-item>
+                <mt-tab-container-item id="测试">
+                    测试<br/>
+                    测试<br/>
+                    测试<br/>
+                    测试<br/>
+                </mt-tab-container-item>
+                <mt-tab-container-item id="我的">
+                    <MinePage></MinePage>
+                </mt-tab-container-item>
+            </mt-tab-container>
+        </div>
 
         <mt-tabbar v-model="selected" fixed>
             <mt-tab-item id="首页">
                 <img slot="icon" src="@/assets/logo.png" />
                 首页
+            </mt-tab-item>
+            <mt-tab-item id="测试">
+                <img slot="icon" src="@/assets/logo.png" />
+                测试
             </mt-tab-item>
             <mt-tab-item id="我的">
                 <img slot="icon" src="@/assets/logo.png" />
@@ -61,12 +73,10 @@ export default {
     
 }
 </script>
-<style scoped>
-#app-main #app-header {
-    height: 7vh;
-    min-height: 48px;
+<style>
+.page-wrap {
+    overflow: auto;
+    padding-top: 60px;
+    padding-bottom: 100px;
 }
-/* #app-main #app-content {
-    position:relative;
-} */
 </style>

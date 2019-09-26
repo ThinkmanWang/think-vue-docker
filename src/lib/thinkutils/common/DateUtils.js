@@ -9,11 +9,11 @@ let _DateUtils = {
         };
 
         y = y.replace(/(M+|d+|h+|m+|s+)/g, function(v) {
-            return ((v.length > 1 ? "0" : "") + eval('z.' + v.slice(-1))).slice(-2)
+            return ((v.length > 1 ? "0" : "") + eval('z.' + v.slice(-1))).slice(-2);
         });
     
         return y.replace(/(y+)/g, function(v) {
-            return x.getFullYear().toString().slice(-v.length)
+            return x.getFullYear().toString().slice(-v.length);
         });
     }
     , today() {
@@ -35,15 +35,15 @@ let _DateUtils = {
         var m = date.getMonth();
         var firstDay = new Date(y, m, 1);
 
-        return this.date2str(firstDay, "yyyy-MM-dd")
+        return this.date2str(firstDay, "yyyy-MM-dd");
     }
     , lastDayOfMonth(szDate) {
         var date = new Date(szDate);
-        var y = date.getFullYear()
+        var y = date.getFullYear();
         var m = date.getMonth();
         var lastDay = new Date(y, m + 1, 0);
 
-        return this.date2str(lastDay, "yyyy-MM-dd")
+        return this.date2str(lastDay, "yyyy-MM-dd");
     }
     , test() {
         window.console.log(this.today());

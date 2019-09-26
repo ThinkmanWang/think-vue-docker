@@ -16,7 +16,9 @@ export default {
         }
     }
     , created () {}
-    , mounted () {}
+    , mounted () {
+        thinkutils.DateUtils.test();
+    }
     , watch: {}
     , computed: {}
     , methods: {}

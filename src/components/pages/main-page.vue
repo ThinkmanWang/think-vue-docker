@@ -51,13 +51,16 @@ export default {
             selected: '首页'
         };
     }
-    , created () {}
     , mounted () {
-        thinkutils.DateUtils.test();
+        
     }
+    , created () {}
     , watch: {}
     , computed: {}
-    , methods: {}
+    , methods: {
+        
+    }
+    
     
 }
 </script>

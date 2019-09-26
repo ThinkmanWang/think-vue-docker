@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'MinePage'
+    name: ''
     , props: {
     }
     , components: {}

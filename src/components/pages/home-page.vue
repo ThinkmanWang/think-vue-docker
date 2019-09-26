@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: 'HomePage'
+    name: ''
     , props: {
     }
     , components: {}

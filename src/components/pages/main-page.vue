@@ -61,13 +61,19 @@ export default {
         };
     }
     , mounted () {
-        
+        window.addEventListener('resize', this.handleWindowResize);
     }
     , created () {}
+    , beforeDestroy: function () {
+        window.removeEventListener('resize', this. handleWindowResize)
+    }
     , watch: {}
     , computed: {}
     , methods: {
-        
+        handleWindowResize(event) { 
+            window.console.log("handleWindowResize");
+            window.console.log(event.currentTarget.innerWidth + "X" + event.currentTarget.innerHeight); 
+        }
     }
     
     

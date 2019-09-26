@@ -4,6 +4,8 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import { Button } from 'mint-ui';
 
+import router from './router'
+
 Vue.component(Button.name, Button);
 
 Vue.use(MintUI)
@@ -11,4 +13,5 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
+  router
 }).$mount('#app')

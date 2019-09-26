@@ -1,6 +1,6 @@
 <template>
     <div class="page-tabbar">
-        <mt-header id="app-header" v-bind:title="selected" fixed="true">
+        <mt-header class="app-header" v-bind:title="selected" fixed="true">
             <router-link to="/" slot="left">
                 <mt-button icon="back"></mt-button>
                 <mt-button >关闭</mt-button>
@@ -25,7 +25,7 @@
             </mt-tab-container>
         </div>
 
-        <mt-tabbar v-model="selected" fixed>
+        <mt-tabbar v-model="selected" fixed="true">
             <mt-tab-item id="首页">
                 <img slot="icon" src="@/assets/logo.png" />
                 首页
@@ -72,7 +72,7 @@ export default {
     , methods: {
         handleWindowResize(event) { 
             window.console.log("handleWindowResize");
-            window.console.log(event.currentTarget.innerWidth + "X" + event.currentTarget.innerHeight); 
+            window.console.log(event.currentTarget.innerWidth + "x" + event.currentTarget.innerHeight); 
         }
     }
     
@@ -80,6 +80,11 @@ export default {
 }
 </script>
 <style>
+.app-header {
+    height: 7vh;
+    min-height: 48px;
+    max-height: 64px;
+}
 .page-wrap {
     overflow: auto;
     padding-top: 60px;

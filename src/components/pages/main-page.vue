@@ -1,5 +1,5 @@
 <template>
-    <div id="Main">
+    <div id="app-main">
         <mt-header id="app-header" v-bind:title="selected" fixed="true">
             <router-link to="/" slot="left">
                 <mt-button icon="back"></mt-button>
@@ -8,7 +8,7 @@
             <mt-button icon="more" slot="right"></mt-button>
         </mt-header>
 
-        <mt-tab-container class="page-tabbar-container" v-model="selected">
+        <mt-tab-container id="app-content" class="page-tabbar-container" v-model="selected">
             <mt-tab-container-item id="首页">
                 <HomePage></HomePage>
             </mt-tab-container-item>
@@ -17,19 +17,16 @@
             </mt-tab-container-item>
         </mt-tab-container>
 
-        <div class="page-tabbar">
-            <mt-tabbar v-model="selected" fixed>
-                <mt-tab-item id="首页">
-                    <!--<img src="components/img/close-circle-white-64.png"></mt-tab-item>-->
-                    <img slot="icon" src="@/assets/logo.png" />
-                    首页
-                </mt-tab-item>
-                <mt-tab-item id="我的">
-                    <img slot="icon" src="@/assets/logo.png" />
-                    我的
-                </mt-tab-item>
-            </mt-tabbar>
-        </div>
+        <mt-tabbar v-model="selected" fixed>
+            <mt-tab-item id="首页">
+                <img slot="icon" src="@/assets/logo.png" />
+                首页
+            </mt-tab-item>
+            <mt-tab-item id="我的">
+                <img slot="icon" src="@/assets/logo.png" />
+                我的
+            </mt-tab-item>
+        </mt-tabbar>
     </div>
 </template>
 
@@ -65,4 +62,11 @@ export default {
 }
 </script>
 <style scoped>
+#app-main #app-header {
+    height: 7vh;
+    min-height: 48px;
+}
+/* #app-main #app-content {
+    position:relative;
+} */
 </style>

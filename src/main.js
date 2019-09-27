@@ -5,6 +5,7 @@ import 'mint-ui/lib/style.css'
 import { Button } from 'mint-ui';
 
 import router from './router'
+import '@/assets/css/reset.css'
 
 Vue.component(Button.name, Button);
 

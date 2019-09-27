@@ -57,6 +57,7 @@
         /*font-size: 30px;*/
         text-align: center;
         overflow: hidden;
+        padding: 0px;
     }
 
     img {

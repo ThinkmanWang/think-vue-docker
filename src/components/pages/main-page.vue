@@ -1,12 +1,12 @@
 <template>
     <div class="page-tabbar">
-        <mt-header class="app-header" v-bind:title="selected" fixed="true">
+        <!-- <mt-header class="app-header" v-bind:title="selected" fixed="true">
             <router-link to="/" slot="left">
                 <mt-button icon="back"></mt-button>
                 <mt-button >关闭</mt-button>
             </router-link>
             <mt-button icon="more" slot="right"></mt-button>
-        </mt-header>
+        </mt-header> -->
 
         <div class="page-wrap">
             <mt-tab-container id="app-content" class="page-tabbar-container" v-model="selected">
@@ -87,7 +87,7 @@ export default {
 }
 .page-wrap {
     overflow: auto;
-    padding-top: 60px;
+    /* padding-top: 64px; */
     padding-bottom: 100px;
 }
 </style>

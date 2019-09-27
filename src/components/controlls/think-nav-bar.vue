@@ -773,7 +773,7 @@ export default {
 .menu-item{
     background-color: #fff;
     /* margin-bottom: .5rem; */
-    border-bottom: 1px solid #fbfafa;
+    border-bottom: .5rem solid #fbf9fa;
 }
 
 .menu-item h4{

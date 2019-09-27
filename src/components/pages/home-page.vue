@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="app-home-page">
         <ThinkBanner ref="thinkBanner"></ThinkBanner>
         <ThinkNavBar></ThinkNavBar>
     </div>
@@ -33,5 +33,14 @@ export default {
 }
 </script>
 <style>
-    
+    .app-home-page {
+
+    }
+    .app-home-page ThinkBanner {
+        z-index: 0;
+    }
+
+    .app-home-page ThinkNavBar {
+        z-index: 1;
+    }
 </style>

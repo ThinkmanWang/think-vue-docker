@@ -671,7 +671,7 @@ export default {
 
 .content{
     background-color: #fbfafa;
-    overflow-y: auto;
+    overflow-y: visible;
 }
 
 .content-block{

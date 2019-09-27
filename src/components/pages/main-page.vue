@@ -80,11 +80,11 @@ export default {
 }
 </script>
 <style>
-.app-header {
+/* .app-header {
     height: 7vh;
     min-height: 48px;
     max-height: 64px;
-}
+} */
 .page-wrap {
     overflow: auto;
     /* padding-top: 64px; */

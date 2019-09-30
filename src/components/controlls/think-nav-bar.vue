@@ -13,7 +13,7 @@
             </nav>
             <div class="content-block tax-content">
                 <div class="content-scroll">
-                    <div class="search">
+                    <!-- <div class="search">
                         <div class="search-icon">
                             <i class="iconfont icon-saomiao"></i>
                         </div>
@@ -21,7 +21,7 @@
                             <input type="text" placeholder="请输入您需要搜索的功能">
                             <i class="iconfont icon-tubiao11"></i>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="menu-box">
                         <div class="menu-wrap" ref="menu-wrap">

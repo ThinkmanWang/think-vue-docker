@@ -3,7 +3,8 @@
         Mine1<br/>
         Mine2<br/>
         Mine3<br/>
-        <mt-button type="primary" width="100%" @click="onFxxkClick">FXXK</mt-button>
+        <p>{{ szTime }}</p>
+        <mt-button type="primary" size="large" @click="onFxxkClick">FXXK</mt-button>
     </div>
 </template>
 
@@ -17,11 +18,12 @@ export default {
     , components: {}
     , data () {
         return {
+            szTime: ""
         }
     }
     , created () {
         this.$bus.on('onFxxk', this.onFxxk);
-        this.$bus.once('onFxxk', () => console.log('This listener will only fire once'));
+        // this.$bus.once('onFxxk', () => console.log('This listener will only fire once'));
     }
     , mounted () {}
     , destroy() {
@@ -31,10 +33,11 @@ export default {
     , computed: {}
     , methods: {
         onFxxkClick() {
-            this.$bus.emit("onFxxk");
+            this.$bus.emit("onFxxk", thinkutils.DateUtils.now());
+            this.szTime = thinkutils.DateUtils.now();
         }
-        , onFxxk() {
-            window.console.log("onFxxk " + thinkutils.DateUtils.now());
+        , onFxxk(args) {
+            window.console.log("onFxxk " + args);
         }
     }
 }

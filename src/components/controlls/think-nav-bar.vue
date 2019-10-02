@@ -532,6 +532,16 @@ export default {
                 //注册滚动事件
                 that.menuScroll.on('scroll', function (pos) {  
                     var disY = Math.abs(pos.y);
+
+                    window.console.log("menuItemTop[0]: " + that.menuItemTop[0] + " disY: " + disY);
+                    if (disY > that.menuItemTop[0]) {
+                        hosEl.classList.remove('hide-nav');
+                        hosEl.classList.add('show-nav');
+                    } else {
+                        hosEl.classList.remove('show-nav');
+                        hosEl.classList.add('hide-nav');
+                    }
+
                     if (pos.y <= -coverH) {
                         if (hosEl.getAttribute('scroll') == '0') {
                             //此处不使用显示与隐藏的原因是，当导航栏隐藏后之前添加的事件会失效，
@@ -539,15 +549,13 @@ export default {
                             that.showUl(options);  //内部只执行一次
                             hosEl.setAttribute('scroll', '1');
                             // hosEl.animate({'top': fixedTopH, 'opacity':'1', 'zIndex': '800'}, 10);
-                            hosEl.classList.remove('hide-nav');
-                            hosEl.classList.add('show-nav');
+                            
                         }
                     }else{
                         hosEl.setAttribute('scroll', '0');
                         
                         // $(options.hosEl).animate({'top': fixedTopPos, 'opacity':'0', 'zIndex': '0'}, 10);
-                        hosEl.classList.remove('show-nav');
-                        hosEl.classList.add('hide-nav');
+                        
                     }
                     //设置当前被激活的索引值
                     that.navList.forEach((ele, index)=>{

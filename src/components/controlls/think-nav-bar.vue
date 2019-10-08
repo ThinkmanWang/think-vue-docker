@@ -366,7 +366,7 @@ export default {
                 that.menuScroll.on('scroll', function (pos) {  
                     var disY = Math.abs(pos.y);
 
-                    window.console.log("menuItemTop[0]: " + that.menuItemTop[0] + " disY: " + disY);
+                    window.console.log("menuItemTop[1]: " + that.menuItemTop[1] + " disY: " + disY);
                     if (disY > that.menuItemTop[0]) {
                         hosEl.classList.remove('hide-nav');
                         hosEl.classList.add('show-nav');
@@ -394,10 +394,10 @@ export default {
                     that.navList.forEach((ele, index)=>{
                         ele.key = false;
                         //判断时减5的原因是滚动时对应的值会比获取到的内容菜单的值要大一点，不符合要求
-                        if (disY < (that.menuItemTop[index+1] - 5) && disY >= (that.menuItemTop[index] - 5)) {
+                        if (disY < (that.menuItemTop[index+1] - that.$refs.navFixed.clientHeight) && disY >= (that.menuItemTop[index] - that.$refs.navFixed.clientHeight)) {
                             that.navList[index].key = true;
                             that.navLiActive = index;
-                        }else if (disY >= (that.menuItemTop[that.navList.length-1] - 5)) {
+                        }else if (disY >= (that.menuItemTop[that.navList.length-1] - that.$refs.navFixed.clientHeight)) {
                             that.navList[that.navList.length-1].key = true;
                             that.navLiActive = that.navList.length-1;
                         }

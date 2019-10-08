@@ -53,7 +53,7 @@ export default {
 
   span {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     text-align: center;
     color: #2f2f2f;

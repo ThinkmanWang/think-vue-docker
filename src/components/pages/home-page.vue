@@ -7,7 +7,7 @@
 
 <script>
 import ThinkBanner from "@/components/controlls/think-banner";
-import ThinkNavBar from '@/components/controlls/think-nav-bar'
+import ThinkNavBar from '@/components/controlls/think-nav-bar';
 // import { Navbar, TabItem } from 'mint-ui';
 
 export default {

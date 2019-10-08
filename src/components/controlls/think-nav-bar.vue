@@ -13,298 +13,127 @@
             </nav>
             <div class="content-block tax-content">
                 <div class="content-scroll">
-                    <!-- <div class="search">
-                        <div class="search-icon">
-                            <i class="iconfont icon-saomiao"></i>
-                        </div>
-                        <div class="search-input">
-                            <input type="text" placeholder="请输入您需要搜索的功能">
-                            <i class="iconfont icon-tubiao11"></i>
-                        </div>
-                    </div> -->
 
                     <div class="menu-box">
                         <div class="menu-wrap" ref="menu-wrap">
                             <div class="menu-item personal-tax">
                                 <h4>
-                                    <span>个</span>人所得税</h4>
+                                    个人所得税
+                                </h4>
                                 <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_1.png')" alt="">
-                                            <span>个人所得税查询</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_2.png')" alt="">
-                                            <span>自行申报A表无扣款义务人</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_3.png')" alt="">
-                                            <span>自行申报A表两处以上所得</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_4.png')" alt="">
-                                            <span>自行申报B表境外所得</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_5.png')" alt="">
-                                            <span>年所得12万以上</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_6.png')" alt="">
-                                            <span>生产经营A表月季</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_7.png')" alt="">
-                                            <span>生产经营B表年度</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_8.png')" alt="">
-                                            <span>生产经营C表两个或以上</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_9.png')" alt="">
-                                            <span>完税证明邮寄</span>
-                                        </div>
-                                        <div>
-
-                                        </div>
-                                    </li>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_1.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_2.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_3.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_4.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_5.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_6.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_7.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_8.png')" ></types-item>
+                                    <types-item txt="个税" :ico="require('@/assets/images/taxes/tax_9.png')" ></types-item>
+                                    <li></li>
+                        
                                 </ul>
                             </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>社</span>保费</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_10.png')" alt="">
-                                            <span>社保费查询</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_11.png')" alt="">
-                                            <span>社保业务</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_12.png')" alt="">
-                                            <span>托收单清缴</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_13.png')" alt="">
-                                            <span>缴费登记</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>车</span>船税</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_14.png')" alt="">
-                                            <span>车船税查询</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_15.png')" alt="">
-                                            <span>车船税缴款</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>房</span>产交易</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_16.png')" alt="">
-                                            <span>契税查询</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_17.png')" alt="">
-                                            <span>房产税交易智能办税</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_18.png')" alt="">
-                                            <span>二手房交易</span>
-                                        </div>
-                                        <div>
-
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>缴</span>款</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_19.png')" alt="">
-                                            <span>税费缴款</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_20.png')" alt="">
-                                            <span>申报作废</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>完</span>税证明</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_21.png')" alt="">
-                                            <span>电子税票</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_22.png')" alt="">
-                                            <span>证明查验</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_23.png')" alt="">
-                                            <span>文书查验</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_24.png')" alt="">
-                                            <span>个人完税查验</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>住</span>房公积金</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_21.png')" alt="">
-                                            <span>总额查询</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_22.png')" alt="">
-                                            <span>明细查询</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_23.png')" alt="">
-                                            <span>提取申请</span>
-                                        </div>
-                                        <div>
-
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>医</span>疗</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_21.png')" alt="">
-                                            <span>问医生</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_22.png')" alt="">
-                                            <span>智能预诊</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_23.png')" alt="">
-                                            <span>体检预约</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_21.png')" alt="">
-                                            <span>儿科诊所</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>交</span>通情况</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_19.png')" alt="">
-                                            <span>地铁购票</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_20.png')" alt="">
-                                            <span>羊城通乘车码</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>政</span>务</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_21.png')" alt="">
-                                            <span>港澳台签证办理</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_22.png')" alt="">
-                                            <span>12315</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_23.png')" alt="">
-                                            <span>法律服务</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_24.png')" alt="">
-                                            <span>广州来穗通</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="menu-item personal-tax">
-                                <h4>
-                                    <span>综</span>合应用</h4>
-                                <ul class="item-ul">
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_21.png')" alt="">
-                                            <span>证件照拍照</span>
-                                        </div>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_22.png')" alt="">
-                                            <span>司法拍卖</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <img :src="require('@/assets/images/taxes/tax_23.png')" alt="">
-                                            <span>境外游</span>
-                                        </div>
-                                        <div>
                             
-                                        </div>
-                                    </li>
+                            <div class="menu-item personal-tax">
+                                <h4>社保费</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="社保" :ico="require('@/assets/images/taxes/tax_10.png')" ></types-item>
+                                    <types-item txt="社保" :ico="require('@/assets/images/taxes/tax_11.png')" ></types-item>
+                                    <types-item txt="社保" :ico="require('@/assets/images/taxes/tax_12.png')" ></types-item>
+                                    <types-item txt="社保" :ico="require('@/assets/images/taxes/tax_13.png')" ></types-item>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>车船税</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="车船税" :ico="require('@/assets/images/taxes/tax_14.png')" ></types-item>
+                                    <types-item txt="车船税" :ico="require('@/assets/images/taxes/tax_15.png')" ></types-item>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>房产交易</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="房产" :ico="require('@/assets/images/taxes/tax_16.png')" ></types-item>
+                                    <types-item txt="房产" :ico="require('@/assets/images/taxes/tax_17.png')" ></types-item>
+                                    <types-item txt="房产" :ico="require('@/assets/images/taxes/tax_18.png')" ></types-item>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>缴款</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="缴款" :ico="require('@/assets/images/taxes/tax_19.png')" ></types-item>
+                                    <types-item txt="缴款" :ico="require('@/assets/images/taxes/tax_20.png')" ></types-item>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>完税证明</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="缴税" :ico="require('@/assets/images/taxes/tax_21.png')" ></types-item>
+                                    <types-item txt="缴税" :ico="require('@/assets/images/taxes/tax_22.png')" ></types-item>
+                                    <types-item txt="缴税" :ico="require('@/assets/images/taxes/tax_23.png')" ></types-item>
+                                    <types-item txt="缴税" :ico="require('@/assets/images/taxes/tax_24.png')" ></types-item>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>住房公积金</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="住房" :ico="require('@/assets/images/taxes/tax_21.png')" ></types-item>
+                                    <types-item txt="住房" :ico="require('@/assets/images/taxes/tax_22.png')" ></types-item>
+                                    <types-item txt="住房" :ico="require('@/assets/images/taxes/tax_23.png')" ></types-item>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>医疗</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="医疗" :ico="require('@/assets/images/taxes/tax_21.png')" ></types-item>
+                                    <types-item txt="医疗" :ico="require('@/assets/images/taxes/tax_22.png')" ></types-item>
+                                    <types-item txt="医疗" :ico="require('@/assets/images/taxes/tax_23.png')" ></types-item>
+                                    <types-item txt="医疗" :ico="require('@/assets/images/taxes/tax_21.png')" ></types-item>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>交通情况</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="购票" :ico="require('@/assets/images/taxes/tax_19.png')" ></types-item>
+                                    <types-item txt="购票" :ico="require('@/assets/images/taxes/tax_20.png')" ></types-item>
+                                    <li></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>政务</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="政务" :ico="require('@/assets/images/taxes/tax_21.png')" ></types-item>
+                                    <types-item txt="政务" :ico="require('@/assets/images/taxes/tax_22.png')" ></types-item>
+                                    <types-item txt="政务" :ico="require('@/assets/images/taxes/tax_23.png')" ></types-item>
+                                    <types-item txt="政务" :ico="require('@/assets/images/taxes/tax_24.png')" ></types-item>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+                            <div class="menu-item personal-tax">
+                                <h4>综合应用</h4>
+                                <ul class="item-ul">
+                                    <types-item txt="综合" :ico="require('@/assets/images/taxes/tax_21.png')" ></types-item>
+                                    <types-item txt="综合" :ico="require('@/assets/images/taxes/tax_22.png')" ></types-item>
+                                    <types-item txt="综合" :ico="require('@/assets/images/taxes/tax_23.png')" ></types-item>
+                                    <li></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -317,9 +146,13 @@
 
 <script>
 import BScroll from 'better-scroll'
+import TypesItem from '@/components/controlls/types-item'
 
 export default {
-    data(){
+    components: {
+        TypesItem
+    }
+    , data(){
        return {
            navList: [
                 {key: true, val:'个人所得税'},
@@ -789,7 +622,7 @@ export default {
     padding: .5rem .75rem;
     line-height: 2rem;
     font-size: .8rem;
-    color: #000;
+    color: #00572c;
     text-align: left;
 }
 
@@ -800,8 +633,8 @@ export default {
 
 .menu-item .item-ul li{
     width: 100%;
-    height: 3.2rem;
-    border-top: 1px solid #fbfafa;
+    height: 1rem;
+    /* border-top: 1px solid #fbfafa; */
     display: -webkit-flex;
     display: flex;
     justify-content: space-between;
@@ -883,7 +716,7 @@ export default {
 }
 
 .nav-ul li.active{
-    color: #4e89f5;
+    color: #00572c;
 }
 
 .nav-ul li.active::after{
@@ -893,7 +726,7 @@ export default {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #4e89f5;
+    background-color: #00572c;
 }
 
 

@@ -679,8 +679,8 @@ export default {
 .nav-fixed{
     width: 100%;
     position: fixed;
-    height: 2.4rem;
-    line-height: 2.4rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
     border-bottom: 1px solid #f1f1f1;
     left: 0;
     top: -50px;
@@ -710,11 +710,11 @@ export default {
 }
 
 .nav-ul li{
-    height: 2.4rem;
+    height: 3.4rem;
     float: left;
     padding: 0 .75rem;
     color: #999999;
-    font-size: .8rem;
+    font-size: 1rem;
     position: relative;
 }
 

@@ -496,7 +496,6 @@ export default {
 
     created () {
         
-        
     }
     , mounted() {
         //实例化滚动插件

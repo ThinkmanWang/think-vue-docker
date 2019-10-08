@@ -493,6 +493,10 @@ export default {
     },
 
     created () {
+        
+        
+    }
+    , mounted() {
         //实例化滚动插件
         this.betterScroll({
             hosEl: '.nav-fixed',   //水平方向导航菜单滚动元素
@@ -503,7 +507,6 @@ export default {
             coverEl: '.search',   //存在的需要被导航栏覆盖的元素，不存在可不传
             contentListSpace: 18  //内容列表之间的间距，随自己的设置调整
         });
-        
     }
 }
 </script>

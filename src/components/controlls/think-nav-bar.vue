@@ -3,7 +3,9 @@
         
         <!-- 这里是页面内容区 -->
         <div class="content" id="contentBox">
-            <div class="placeholder-header"></div>
+            <div class="placeholder-header">
+            </div>
+
             <nav class="nav-fixed" scroll="0" ref="navFixed">
                 <ul class="nav-ul content" id="navUl">
                     <li v-for="(item,index) in navList" :class="{'active': item.key}" :key="index" :val="index">
@@ -11,6 +13,7 @@
                     </li>
                 </ul>
             </nav>
+            
             <div class="content-block tax-content">
                 <div class="content-scroll">
                     <ThinkBanner ref="thinkBanner"></ThinkBanner>

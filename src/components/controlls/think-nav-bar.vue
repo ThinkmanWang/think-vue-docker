@@ -710,7 +710,7 @@ export default {
     height: 2.4rem;
     float: left;
     padding: 0 .75rem;
-    color: #000;
+    color: #999999;
     font-size: .8rem;
     position: relative;
 }

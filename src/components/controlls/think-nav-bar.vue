@@ -4,7 +4,7 @@
         <!-- 这里是页面内容区 -->
         <div class="content" id="contentBox">
             <div class="placeholder-header"></div>
-            <nav class="nav-fixed" id="navFixed" scroll="0" ref="navFixed">
+            <nav class="nav-fixed" scroll="0" ref="navFixed">
                 <ul class="nav-ul content" id="navUl">
                     <li v-for="(item,index) in navList" :class="{'active': item.key}" :key="index" :val="index">
                         {{item.val}}
@@ -13,7 +13,7 @@
             </nav>
             <div class="content-block tax-content">
                 <div class="content-scroll">
-
+                    <ThinkBanner ref="thinkBanner"></ThinkBanner>
                     <div class="menu-box">
                         <div class="menu-wrap" ref="menu-wrap">
                             <div class="menu-item personal-tax">
@@ -147,10 +147,12 @@
 <script>
 import BScroll from 'better-scroll'
 import TypesItem from '@/components/controlls/types-item'
+import ThinkBanner from "@/components/controlls/think-banner";
 
 export default {
     components: {
         TypesItem
+        , ThinkBanner
     }
     , data(){
        return {
